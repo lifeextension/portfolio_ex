@@ -1,0 +1,22 @@
+
+.hl_div1 {
+
+    position: absolute;
+    height: 54px;
+    width: 214px;
+    background-color: rgb(165, 219, 248);
+    opacity: 0.5;
+    margin-top: 696px;
+    margin-right: 253px;
+    animation:animationName 1.5s 0s infinite ease-in-out alternate;
+    z-index: -4;
+
+}
+
+
+@keyframes animationName { 
+    
+    0% {opacity:0;} 
+    100% {opacity:0.5;} 
+    
+} 

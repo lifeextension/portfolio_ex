@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+/* caroucel */
+#div1 .caroucel{
+    width: 100%;
+    margin-top: 400px;
+
+}
+.caroucel p{
+    color: rgb(195, 231, 250);
+    font-size: 200px;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 350px;} 
+
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+
+.caroucel{
+        position: absolute;
+        height: 100%;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 30px 1fr 30px;
+        gap: 3px;
+        letter-spacing: -0.5rem;
+
+        grid-column: 1 / -1;
+        padding: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        z-index: -9;
+        opacity: 0.5;
+}
+
+.caroucel p{
+  animation: marquee-bottom 35s linear infinite;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+  
+}
+/* 35~40s */
+
+
+@keyframes marquee-bottom {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+
+};
